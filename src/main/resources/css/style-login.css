@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+body{
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container-style {
+    margin-top: 8rem;
+    margin-left: 22rem;
+    padding: 1rem;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.btn {
+    background-color: #6669a0;
+    color: white;
+    border:0px solid transparent;
+}
+
+.btn:hover {
+    background-color: #5b39b8;
+    color: white;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manager</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style-manager.css">
+	<script src="/js/manager.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar navbar-light bg-light">
+		<div class="container-fluid col-8">
+			<a class="navbar-brand">
+				Expense Reimbursement System
+			</a>
+		</div>
+		<form class="col-2" action="/api/user/logout" mehtod = 'GET'>
+			<button class="btn btn-outline-danger" id="logoutbutton">Log Out</button>
+		</form>
+	</nav>
+	
+	<div class="create-form" id="create-form">
+		<form id="update-form" action="/user/manager/reimb/update" method="POST">
+			<h3>UPDATE TICKETS</h3>
+			<div class="reimbId">
+				<input type="text" class="form-control" id="reimbId" placeholder="Ticket ID" name="reimbId">
+			</div>
+			<div class="type">
+				<select class="form-select" id="type" name="reimbStatusId">
+					<option value="1">PENDING</option>
+					<option value="2">APROVE</option>
+					<option value="3">REJECT</option>
+				</select>
+
+					<button class="btn btn-secondary" id="create-btn">Update</button>
+			</div>
+		</form>
+	</div>
+	<br />
+	<div class="filter">
+		<input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Filter request by status">
+	</div>
+	
+
+		<table id="myReimbTable" class="myTable">
+		<thead>
+			<tr id="header">
+				<th>Ticket ID</th>
+				<th>Amount </th>
+				<th>Date Submitted</th>
+				<th>Date Resolved</th>
+				<th>Description</th>
+				<th>Author</th>
+				<th>Resolver</th>
+				<th>Status</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody id="myReimbTableData"></tbody>
+	</table>
+	
+	
+	
+</body>
+</html>

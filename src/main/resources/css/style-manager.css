@@ -1,0 +1,99 @@
+body{
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+   background-color: rgba(14, 22, 54, 0.384);
+}
+
+h3 {
+    margin-top: 1rem;
+    color: #5b39b8;
+
+}
+
+
+.create-form{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+     
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #5b39b8;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #42255e;
+    color: #fff;
+}
+
+
+.styled-table thead tr {
+    background-color: #d7d9f2;
+}
+
+
+
+.btn {
+    background-color: #6669a0;
+    color: white;
+    border:0px solid transparent;
+}
+
+.btn:hover {
+    background-color: #5b39b8;
+    color: white;
+}
+
+#create-btn {
+    margin-top: 1rem;
+}
+
+.myTable {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    margin-left: 30%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#myInput{
+    margin-top: 1rem;
+    margin-left: 34%;
+    width: 33%;
+}
+
+.filter {
+    width: 100%;
+}
+
+.create-form {
+	padding: 1rem;
+	
+}
+
+#update-form { 
+	    border: solid 2px;
+		padding: 1rem;
+	border-color: white;
+	
+}
+
