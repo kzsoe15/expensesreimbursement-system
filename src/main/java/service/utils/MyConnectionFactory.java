@@ -11,9 +11,9 @@ public class MyConnectionFactory {
 	private static final Logger loggy = Logger.getLogger(MyConnectionFactory.class);
 
 	// CONNECT TO THE DATABASE BY USING URL, USERNAME, PASSWORD
-	private static final String USERNAME = "postgres";
-	private static final String PASSWORD = "p4ssw0rd";
-	private static final String URL = "jdbc:postgresql://34.68.152.227/reimbursementDB";
+	private static final String USERNAME = "";
+	private static final String PASSWORD = "";
+	private static final String URL = "";
 
 	public static Connection getConnection() throws SQLException {
 		loggy.info("Connection established to connect to the Database.");
